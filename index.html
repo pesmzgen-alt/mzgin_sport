@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Mzgin.Sport — هەواڵ، ئەنجام و خشتەیا یاریێن فوتبۆلێ">
+  <title>Mzgin.Sport | دنیایا فوتبۆلێ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">M</span><span>Mzgin<span class="red">.Sport</span><small>دنیایا فوتبۆلێ</small></span></a>
+    <nav><a href="#matches">ئەنجام</a><a href="#news">هەواڵ</a><a href="#about">دەربارە</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> هەواڵ و ئەنجامێن فوتبۆلێ</span>
+        <h1>هەموو دنیایا<br><span class="red">فوتبۆلێ</span> ل جهەکێ</h1>
+        <p>ئەنجامێن یارییان، خشتە، و هەواڵێن نوو — ل Mzgin.Sport.</p>
+        <a class="primary-btn" href="#matches">بینینا ئەنجامان <span>←</span></a>
+      </div>
+      <div class="hero-ball" aria-hidden="true">⚽</div>
+      <div class="hero-stats"><div><strong>LIVE</strong><span>ئەنجامێن ڕاستەوخۆ</span></div><div><strong>24/7</strong><span>هەواڵێن فوتبۆلێ</span></div></div>
+    </section>
+
+    <section class="section" id="matches">
+      <div class="section-heading"><div><span class="eyebrow">MATCH CENTER</span><h2>ئەنجام و یاری</h2></div><button id="refresh" class="refresh-btn">⟳ نووکرن</button></div>
+      <div class="tabs" role="tablist"><button class="tab active" data-day="today">ئەمڕۆ</button><button class="tab" data-day="tomorrow">سبەی</button></div>
+      <div id="status" class="status">دگەڕێین بۆ ئەنجامان...</div>
+      <div id="matches-list" class="matches-list"></div>
+      <p class="disclaimer">ئەنجام و یارییان د API ـێ ڤەکری دا بەردەستن؛ دابەشبوونا لیگ و داتایان د پلانا API ـێ پەیوەستە.</p>
+    </section>
+
+    <section class="section news-section" id="news">
+      <div class="section-heading"><div><span class="eyebrow">LATEST</span><h2>هەواڵێن فوتبۆلێ</h2></div></div>
+      <div class="news-grid">
+        <article class="news-card"><div class="news-art art-one">⚽</div><div class="news-body"><span class="news-tag">هەواڵ</span><h3>هەواڵێن نوو یێن فوتبۆلێ</h3><p>ئەڤ بەشە بۆ هەواڵێن تازە ئامادەکریە. هەواڵ دێ دەمێ داتاسەرچاوەکێ زیاد بکەی تێدا دانرێن.</p></div></article>
+        <article class="news-card"><div class="news-art art-two">🏆</div><div class="news-body"><span class="news-tag">لیگ</span><h3>ئەنجام و خشتەیا لیگێن</h3><p>ئەنجامێن یارییان و خشتەیا لیگێن د بەشێ ئەنجامان دا دەرکەڤن.</p></div></article>
+        <article class="news-card"><div class="news-art art-three">🔥</div><div class="news-body"><span class="news-tag">گرنگ</span><h3>چاوپێکەفتن و ڕووداوێن گرنگ</h3><p>دەتوانی پاشتر لینکێن فەرمی یان سەرچاوەیا هەواڵان ل ڤێرە زیاد بکەی.</p></div></article>
+      </div>
+      <p class="disclaimer">ئاگەهداری: کارتەکێن سەرەوە نموونەن، نە هەواڵێن ڕاستەقینە. ئەڤ وەشانە هێشتا بە سەرچاوەکا هەواڵانڤە نەهاتیە گرێدان.</p>
+    </section>
+
+    <section class="about" id="about"><div class="about-icon">M</div><div><span class="eyebrow">ABOUT MZGIN.SPORT</span><h2>Mzgin.Sport</h2><p>ماڵپەڕەکێ وەرزشی بۆ دۆزینەوەیا ئەنجام، یاری و هەواڵێن فوتبۆلێ.</p></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">M</span><span>Mzgin<span class="red">.Sport</span></span></a><span>© <span id="year"></span> Mzgin.Sport</span><span>دروستکری بۆ خۆشەویستێن فوتبۆلێ ⚽</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
